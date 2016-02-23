@@ -2,5 +2,9 @@
 /show/description "CPU Visualizer"
 /show/messagebox "By devaidsblog"
 /show/messagebox "https://github.com/davidsblog/rCPU"
+
 /system/gitcloner "davidsblog/rCPU" /do/rCPU/www
 cd /do/rCPU/www/rCPU/ && sudo make install
+
+
+/show/listecho "Go to http://$(/show/smbGetName).local:8111" $ERR
